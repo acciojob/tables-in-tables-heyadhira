@@ -8,69 +8,50 @@
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
-            padding: 10px;
             text-align: center;
         }
-        .black-cell {
+        th, td {
+            padding: 10px;
+        }
+        .black-bg {
             background-color: black;
             color: white;
+        }
+        a {
+            color: purple;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h2>Tables in Tables</h2>
-    <table>
+    <table width="100%">
         <tr>
-            <th>Main Table</th>
-        </tr>
-        <tr>
-            <td>
-                <table>
+            <td width="50%">
+                <table width="100%">
+                    <tr>
+                        <th colspan="2">Nested Table 2</th>
+                    </tr>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                    <tr>
+                        <td>abc</td>
+                        <td>def</td>
+                    </tr>
+                </table>
+            </td>
+            <td width="50%">
+                <table width="100%">
                     <tr>
                         <th>Nested Table 1</th>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Row 1</td>
-                        <td>Data 1</td>
-                        <td>Data 2</td>
-                    </tr>
-                    <tr>
-                        <td>Data 3</td>
-                        <td>Data 4</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 2</th>
-					</tr>
-					<tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
-                    </tr>
-                    <tr>
-                        <td class="black-cell" colspan="3">HTML</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <th>Nested Table 3</th>
                     </tr>
                     <tr>
                         <td>
                             <ul>
-                                <li>List item 1</li>
-                                <li>List item 2</li>
-                                <li>List item 3</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
                             </ul>
                         </td>
                     </tr>
@@ -78,22 +59,24 @@
             </td>
         </tr>
         <tr>
-            <td>
-                <table>
+            <td width="50%">
+                <table width="100%">
+                    <tr>
+                        <th colspan="2">Nested Table 3</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Nested Table</a></td>
+                        <td>Demo Continued</td>
+                    </tr>
+                </table>
+            </td>
+            <td width="50%">
+                <table width="100%">
                     <tr>
                         <th>Nested Table 4</th>
-                        <th>Column A</th>
-                        <th>Column B</th>
                     </tr>
                     <tr>
-                        <td>Row X</td>
-                        <td>Data X1</td>
-                        <td>Data X2</td>
-                    </tr>
-                    <tr>
-                        <td>Row Y</td>
-                        <td>Data Y1</td>
-                        <td>Data Y2</td>
+                        <td class="black-bg">HTML</td>
                     </tr>
                 </table>
             </td>
